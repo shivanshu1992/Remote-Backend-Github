@@ -7,6 +7,14 @@ resource "google_storage_bucket" "storage_bucket1" {
  
 }
 
+resource "google_storage_bucket" "storage_bucket2" {
+  name          = "shivanshu-remote-bucket2"
+  location      = "us-west1"
+  project     = "project-for-testing-424407"
+ 
+}
+
+
 // display bucket info in terminal
 
 output "name_of_bucket" {
